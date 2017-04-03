@@ -33,15 +33,14 @@ public class TwitterPorukaTest {
 	a.setKorisnik("aleksa");
 	assertEquals("aleksa", a.getKorisnik());
 	}
+	
 	@Test (expected = java.lang.RuntimeException.class)
 	public void testSetKorisnikNull() {
 	a.setKorisnik(null);
-	fail("greska u set metodi, ne radi sta treba");
 	}
 	@Test (expected = java.lang.RuntimeException.class)
 	public void testSetKorisnikPrazno() {
 	a.setKorisnik("");
-	fail("greska u set metodi, ne radi sta treba");
 	}
 	/*@Test
 	public void testGetPoruka() {
@@ -54,13 +53,10 @@ public class TwitterPorukaTest {
 	@Test (expected = java.lang.RuntimeException.class)
 	public void testSetPorukaNull() {
 		a.setPoruka(null);
-		fail("greska u set metodi, ne radi sta treba");
-		
 	}
 	@Test (expected = java.lang.RuntimeException.class)
 	public void testSetPorukaPrazno() {
 		a.setPoruka("");
-		fail("greska u set metodi, ne radi sta treba");
 	}
 	@Test(expected = java.lang.RuntimeException.class)
 	public void testSetPorukaDuzina() {

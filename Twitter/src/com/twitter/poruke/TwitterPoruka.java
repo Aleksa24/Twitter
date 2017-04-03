@@ -27,7 +27,7 @@ public class TwitterPoruka {
 	/**
 	 * Upisuje ime korisnika. Ime ne sme biti prazno ili null da se ne bi bacila RuntimeException
 	 * @param korisnik novo ime korisnika
-	 * throws link java.lang.RuntimeException ako je ime prazno ili null
+	 * @throws link java.lang.RuntimeException ako je ime prazno ili null
 	 */
 	public void setKorisnik(String korisnik) {
 		if (korisnik==null || korisnik.isEmpty())
